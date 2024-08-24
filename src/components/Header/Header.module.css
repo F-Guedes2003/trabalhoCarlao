@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(43, 57, 77);
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+}
+
+.options {
+    text-decoration: none;
+    color: white;
+    padding: 10px 2vh;
+}
+
+.options:hover {
+    font-weight: bold;
+}
+
+.active {
+    color: rgb(69, 69, 129)
+}
