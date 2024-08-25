@@ -4,7 +4,8 @@ import React from 'react'
 import Style from './ProductsContainer.module.css';
 
 //importing components
-
+import Grid from '../../layout/Grid';
+import Card from '../Card/Card';
 
 //importing hooks
 import { useState, useEffect } from 'react';
@@ -19,9 +20,14 @@ const ProductsContainer = ({title, productList}) => {
     <div className={Style.container}>
         <h3>{title}</h3>
 
-        { productList.length > 0 ? productList.map((item, index) => {
-            
-        }) : (<p>Nenhum produto ainda</p>) }        
+        {productList.length > 0 ?
+
+            <Grid>
+                {productList.map((item, index) => {
+                    return <Card key={index} name={item.name} state={item.state} price={item.price}/>})}
+            </Grid>
+
+        : (<p>Não há nenhum produto</p>)}
     </div>
   )
 }

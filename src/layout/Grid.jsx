@@ -4,7 +4,7 @@ import Style from './Grid.module.css';
 
 const Grid = ({children}) => {
   return (
-    <div className={Style.grid}>
+    <div className={Style.container}>
         {children}
     </div>
   )
