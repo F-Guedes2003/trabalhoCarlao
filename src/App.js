@@ -27,7 +27,7 @@ function App() {
       products.push(list[i]);
     }
 
-    if(section != ''){
+    if(section !== ''){
       const object = { section, brand, name, price, state };
       products.push(object);
       setList(products);
