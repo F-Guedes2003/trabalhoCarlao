@@ -2,7 +2,6 @@ import React from 'react'
 
 //importing style
 import Style from './Products.module.css';
-import { FormControl, FormLabel, Input } from '@chakra-ui/react';
 
 //importing hooks
 import { useState, useEffect } from 'react';
