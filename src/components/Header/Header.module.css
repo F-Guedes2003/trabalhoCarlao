@@ -25,3 +25,14 @@
 .active {
     color: rgb(69, 69, 129)
 }
+
+@media screen and (max-width: 780px) {
+    .header{
+        padding: 0px 10px;
+    }
+    
+    .options {
+        font-size: .6em;
+        padding: 4px;
+    }
+}

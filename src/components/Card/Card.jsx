@@ -2,7 +2,7 @@ import React from 'react'
 
 import Style from './Card.module.css'
 
-const Card = ({imagePath, name, price, state}) => {
+const Card = ({imagePath, name, price, state, brand}) => {
   return (
     <div className={Style.card}>
         
@@ -10,6 +10,7 @@ const Card = ({imagePath, name, price, state}) => {
         
         <div className={Style.details}>
             <h4>{name}</h4>
+            <p className={Style.state}>{brand}</p>
             <p>R${price}</p>
             <p className={Style.state}>{state}</p>
         </div>

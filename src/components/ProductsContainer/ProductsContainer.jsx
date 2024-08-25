@@ -4,7 +4,7 @@ import React from 'react'
 import Style from './ProductsContainer.module.css';
 
 //importing components
-import Grid from '../../layout/Grid';
+import ExposeLayout from '../../layout/ExposeLayout';
 import Card from '../Card/Card';
 
 //importing hooks
@@ -22,10 +22,10 @@ const ProductsContainer = ({title, productList}) => {
 
         {productList.length > 0 ?
 
-            <Grid>
+            <ExposeLayout>
                 {productList.map((item, index) => {
-                    return <Card key={index} name={item.name} state={item.state} price={item.price}/>})}
-            </Grid>
+                    return <Card key={index} name={item.name} brand={item.brand} state={item.state} price={item.price}/>})}
+            </ExposeLayout>
 
         : (<p>Não há nenhum produto</p>)}
     </div>

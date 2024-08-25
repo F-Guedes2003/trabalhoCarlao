@@ -27,6 +27,11 @@ function Form({brands, sections, getName, getPrice, getState, getSection, getBra
         getBrand(brand);
         setState(state);
         
+        setBrand('');
+        setName('');
+        setPrice('');
+        setSection('');
+        setState('');
     }
 
     return (

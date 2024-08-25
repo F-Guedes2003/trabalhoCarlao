@@ -1,9 +1,8 @@
 .form {
     display: flex;
     flex-direction: column;
-    border: solid 2px;
     border-radius: 30px;
-    background-color: rgb(234, 242, 255);
+    background-color: rgb(205, 205, 211);
     padding: 2rem;
     margin: 2rem;
 }
@@ -24,4 +23,12 @@
 
 .form button {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    .form {
+        width: 65vw;
+        height: 50vh;
+        justify-content: space-between;
+    }
 }

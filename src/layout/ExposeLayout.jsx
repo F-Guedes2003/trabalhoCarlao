@@ -2,7 +2,7 @@ import React from 'react'
 
 import Style from './Grid.module.css';
 
-const Grid = ({children}) => {
+const ExposeLayout = ({children}) => {
   return (
     <div className={Style.container}>
         {children}
@@ -10,4 +10,4 @@ const Grid = ({children}) => {
   )
 }
 
-export default Grid
+export default ExposeLayout
