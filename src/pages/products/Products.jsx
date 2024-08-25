@@ -7,17 +7,19 @@ import { FormControl, FormLabel, Input } from '@chakra-ui/react';
 //importing hooks
 import { useState, useEffect } from 'react';
 
+//importing components
+
 function Products({productList}) {
 
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-
-  }, [])
+    console.log(productList);
+  }, [productList])
 
   return (
     <section className={Style.main}>
-        Products
+        <h2>Products</h2>
     </section>
   )
 }

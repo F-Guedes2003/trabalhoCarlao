@@ -7,7 +7,7 @@ return (
         <label> {label} </label>
         <select onChange={e => setValue(e.target.value)}>
 
-            {options.map((item, index) => <option key={index} value={item.name} >{item.name}</option>)}
+            {options.map((item, index) => <option key={index} value={item.value} >{item.name}</option>)}
         
         </select>
     </>

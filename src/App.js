@@ -20,7 +20,7 @@ function App() {
   const [state, setState] = useState('');
 
   useEffect(() => {
-    console.log(brand, name);
+    console.log(brand, name, section);
 
     const products = [];
     for(let i = 0; i < list.length; i++){
@@ -34,10 +34,6 @@ function App() {
     }
 
   }, [section, brand, name, price, state])
-
-  useEffect(() => {
-    console.log(list);
-  }, [list]);
 
   return (
       <BrowserRouter>
