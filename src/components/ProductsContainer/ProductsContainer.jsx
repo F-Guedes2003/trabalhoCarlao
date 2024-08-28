@@ -24,7 +24,7 @@ const ProductsContainer = ({title, productList}) => {
 
             <ExposeLayout>
                 {productList.map((item, index) => {
-                    return <Card key={index} name={item.name} brand={item.brand} state={item.state} price={item.price}/>})}
+                    return <Card key={index} imagePath={item.image} name={item.name} brand={item.brand} state={item.state} price={item.price}/>})}
             </ExposeLayout>
 
         : (<p>Não há nenhum produto</p>)}

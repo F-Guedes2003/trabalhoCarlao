@@ -2,7 +2,7 @@ import React from 'react'
 
 import Style from './Card.module.css'
 
-const Card = ({imagePath, name, price, state, brand}) => {
+const Card = ({name, price, state, brand, imagePath = ''}) => {
   return (
     <div className={Style.card}>
         

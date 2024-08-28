@@ -29,7 +29,7 @@ function App() {
     }
 
     if(section !== ''){
-      const object = { section, brand, name, price, state };
+      const object = { section, brand, name, price, state, image };
       products.push(object);
       setList(products);
     }
