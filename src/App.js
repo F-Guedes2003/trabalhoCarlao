@@ -12,6 +12,7 @@ import Main from './pages/main/Main';
 
 function App() {
 
+  const [image, setImage] = useState('');
   const [list, setList] = useState([]);
   const [section, setSection] = useState('');
   const [brand, setBrand] = useState('');
@@ -33,7 +34,7 @@ function App() {
       setList(products);
     }
 
-  }, [section, brand, name, price, state])
+  }, [section, brand, name, price, state, image])
 
   return (
       <BrowserRouter>
@@ -41,7 +42,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/new-product' element={<NewProduct brandHandler={setBrand} nameHandler={setName} 
-          sectionHandler={setSection} priceHandler={setPrice} stateHandler={setState} />} />
+          sectionHandler={setSection} priceHandler={setPrice} stateHandler={setState} imageHandler={setImage} />} />
           <Route path='products' element={<Products productList={list}/>} />
         </Routes>
       </BrowserRouter>

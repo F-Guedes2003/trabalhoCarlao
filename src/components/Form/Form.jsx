@@ -10,12 +10,13 @@ import TextInput from '../TextInput/TextInput';
 import SelectInput from '../SelectInput/SelectInput';
 import NumberInput from '../NumberInput/NumberInput'
 
-function Form({brands, sections, getName, getPrice, getState, getSection, getBrand}) {
+function Form({brands, sections, getName, getPrice, getState, getSection, getBrand, getImage}) {
     const [section, setSection] = useState('');
     const [brand, setBrand] = useState('');
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
     const [state, setState] = useState('');
+    const [image, setImage] = useState('');
 
     function handleSubmit(e){
         e.preventDefault();
@@ -45,7 +46,9 @@ function Form({brands, sections, getName, getPrice, getState, getSection, getBra
         <TextInput label="Nome" id='name' setValue={setName} />
 
         <NumberInput id='price' label='Preço' setValue={setPrice}/>
-        
+
+        <TextInput label="url da foto" id="Photo" setValue={setImage} />
+
         <label htmlFor='state' id='state'>Estado: </label>
         <div id='state'>
             <label htmlFor="new">Novo</label>

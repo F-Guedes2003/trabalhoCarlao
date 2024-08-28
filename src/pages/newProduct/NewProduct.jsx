@@ -6,8 +6,9 @@ import Form from '../../components/Form/Form';
 import { useState } from 'react';
 
 
-function NewProduct({brandHandler, sectionHandler, nameHandler, priceHandler, stateHandler}) {
+function NewProduct({brandHandler, sectionHandler, nameHandler, priceHandler, stateHandler, imageHandler}) {
 
+  const [image, setImage] = useState('');
   const [section, setSection] = useState('');
   const [brand, setBrand] = useState('');
   const [name, setName] = useState('');
@@ -16,6 +17,7 @@ function NewProduct({brandHandler, sectionHandler, nameHandler, priceHandler, st
 
   useEffect(() => {
     
+    imageHandler(image)
     sectionHandler(section);
     brandHandler(brand);
     nameHandler(name);
@@ -41,7 +43,7 @@ function NewProduct({brandHandler, sectionHandler, nameHandler, priceHandler, st
 
       <h2>Cadastre seu Produto</h2>
 
-      <Form brands={brands} sections={sections} getBrand={setBrand} getSection={setSection} getName={setName}
+      <Form brands={brands} sections={sections} getImage={setImage} getBrand={setBrand} getSection={setSection} getName={setName}
       getPrice={setPrice} getState={setState} />
     
     </section>
