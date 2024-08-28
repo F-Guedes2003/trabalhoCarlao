@@ -39,13 +39,13 @@ function Form({brands, sections, getName, getPrice, getState, getSection, getBra
 
     <form className={Style.form} onSubmit={handleSubmit}>
 
-        <SelectInput label={"Seção"} options={sections} setValue={setSection}/>
+        <SelectInput label={"Seção"} options={sections} value={section} setValue={setSection}/>
 
-        <SelectInput label={"Marcas"} options={brands} setValue={setBrand}/>
+        <SelectInput label={"Marcas"} options={brands} value={brand} setValue={setBrand}/>
 
-        <TextInput label="Nome" id='name' setValue={setName} />
+        <TextInput label="Nome" id='name' value={name} setValue={setName} />
 
-        <NumberInput id='price' label='Preço' setValue={setPrice}/>
+        <NumberInput id='price' label='Preço' value={price} setValue={setPrice}/>
 
         <label htmlFor='state' id='state'>Estado: </label>
         <div id='state'>
