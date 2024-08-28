@@ -16,7 +16,6 @@ function Form({brands, sections, getName, getPrice, getState, getSection, getBra
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
     const [state, setState] = useState('');
-    const [image, setImage] = useState('');
 
     function handleSubmit(e){
         e.preventDefault();

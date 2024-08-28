@@ -9,9 +9,19 @@
     border-radius: 30px;
 }
 
-.card img{
-    height: 60%;
-    width: 100%
+.imageContainer {
+    width: 100%;
+    height: 60%; /* Defina a altura fixa para o container da imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Esconde qualquer parte da imagem que exceda os limites do container */
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir totalmente o container */
 }
 
 .state {
