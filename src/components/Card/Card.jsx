@@ -6,7 +6,7 @@ const Card = ({name, price, state, brand, imagePath = ''}) => {
   return (
     <div className={Style.card}>
         
-        <img src={imagePath} alt={name} />
+        <img src='/images/produtoSemFoto.png' alt={name} />
         
         <div className={Style.details}>
             <h4>{name}</h4>
