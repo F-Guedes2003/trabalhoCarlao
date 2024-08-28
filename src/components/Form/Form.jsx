@@ -47,8 +47,6 @@ function Form({brands, sections, getName, getPrice, getState, getSection, getBra
 
         <NumberInput id='price' label='Preço' setValue={setPrice}/>
 
-        <TextInput label="url da foto" id="Photo" setValue={setImage} />
-
         <label htmlFor='state' id='state'>Estado: </label>
         <div id='state'>
             <label htmlFor="new">Novo</label>
