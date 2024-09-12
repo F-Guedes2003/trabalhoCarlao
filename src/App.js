@@ -10,6 +10,8 @@ import NewProduct from './pages/newProduct/NewProduct';
 import Products from './pages/products/Products';
 import Main from './pages/main/Main';
 
+//this is just for git config
+
 function App() {
 
   const [image, setImage] = useState('');
